@@ -16,6 +16,6 @@ const bookSchema = new mongoose.Schema({
     }
 });
 
-const Book = mongoose.model('300357124-vasu', bookSchema);
+const Book = mongoose.model('books', bookSchema);
 
 export { Book};
