@@ -20,7 +20,7 @@ const CreateBook = () => {
         "description": description
       };
 
-      const res = await axios.post('https://finalexam-300357124.onrender.com', createBookRequest);
+      const res = await axios.post('https://randomproject.onrender.com', createBookRequest);
       const book = res.data.BookAdded;
       console.log(book);
       setMessage('Book Created Successfully');
