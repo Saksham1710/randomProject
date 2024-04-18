@@ -16,7 +16,7 @@ function UpdateBook() {
         const fetchBook = async () => {
             if (!id) return;
             try {
-                const response = await axios.get(`https://finalexam-300357124.onrender.com/${id}`);
+                const response = await axios.get(`https://randomproject.onrender.com/${id}`);
                 const { title, author, description } = response.data;
                 setTitle(title);
                 setAuthor(author);
@@ -33,7 +33,7 @@ function UpdateBook() {
         event.preventDefault();
         try {
             const updateData = { title, author, description };
-            const response = await axios.put(`https://finalexam-300357124.onrender.com/${id}`, updateData);
+            const response = await axios.put(`https://randomproject.onrender.com/${id}`, updateData);
             console.log("Book updated:", response.data);
             alert('Book updated successfully!');
             navigate("/");
