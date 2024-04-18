@@ -12,7 +12,7 @@ const BookList = () => {
 
   const getAllBooks = async () => {
     try {
-      const response = await axios.get('https://finalexam-300357124.onrender.com/');
+      const response = await axios.get('https://randomproject.onrender.com/');
       setBooks(response.data);
     } catch (error) {
       console.log('Error from BookList:', error);
@@ -21,7 +21,7 @@ const BookList = () => {
 
   const deleteBook = async (id) => {
     try {
-      await axios.delete('https://finalexam-300357124.onrender.com/' + id);
+      await axios.delete('https://randomproject.onrender.com/' + id);
       getAllBooks();
     } catch (error) {
       console.log('Error from delete book:', error);
